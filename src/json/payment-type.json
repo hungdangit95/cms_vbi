@@ -1,0 +1,12 @@
+{
+    "data":[
+        {
+            "key":"ONLINE",
+            "name":"Thanh toán trực tuyến"
+         },
+       {
+          "key":"OFFLINE",
+          "name":"Thanh toán sau"
+       }
+    ]
+ }

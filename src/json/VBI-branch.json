@@ -1,0 +1,128 @@
+{
+  "data": [
+    {
+      "key": "000",
+      "name": "VBI - Trụ sở chính"
+    },
+    {
+      "key": "001",
+      "name": "VBI - Hồ Chí Minh"
+    },
+    {
+      "key": "002",
+      "name": "VBI - Đà Nẵng"
+    },
+    {
+      "key": "003",
+      "name": "VBI - Hà Nội"
+    },
+    {
+      "key": "004",
+      "name": "VBI - Hải Phòng"
+    },
+    {
+      "key": "005",
+      "name": "VBI - Sài Gòn"
+    },
+    {
+      "key": "006",
+      "name": "VBI - Thanh Hóa"
+    },
+    {
+      "key": "007",
+      "name": "VBI - Tây Nguyên"
+    },
+    {
+      "key": "008",
+      "name": "VBI - Thăng Long"
+    },
+    {
+      "key": "009",
+      "name": "VBI - Tây Bắc"
+    },
+    {
+      "key": "010",
+      "name": "VBI - Đồng Nai"
+    },
+    {
+      "key": "011",
+      "name": "VBI - Nghệ An"
+    },
+    {
+      "key": "012",
+      "name": "VBI - Khánh Hòa"
+    },
+    {
+      "key": "013",
+      "name": "VBI - Cần Thơ"
+    },
+    {
+      "key": "014",
+      "name": "VBI - Đông Bắc"
+    },
+    {
+      "key": "015",
+      "name": "VBI - Tràng An"
+    },
+    {
+      "key": "016",
+      "name": "VBI - Bến Thành"
+    },
+    {
+      "key": "017",
+      "name": "VBI - Lào Cai"
+    },
+    {
+      "key": "018",
+      "name": "VBI - Quảng Ninh"
+    },
+    {
+      "key": "019",
+      "name": "VBI - Bình Dương"
+    },
+    {
+      "key": "020",
+      "name": "VBI - Đông Đô"
+    },
+    {
+      "key": "021",
+      "name": "VBI - Thái Nguyên"
+    },
+    {
+      "key": "080",
+      "name": "VBI - Tiền Giang"
+    },
+    {
+      "key": "081",
+      "name": "VBI - Vĩnh Long"
+    },
+    {
+      "key": "082",
+      "name": "VBI - Long An"
+    },
+    {
+      "key": "083",
+      "name": "VBI - Tuyên Quang"
+    },
+    {
+      "key": "084",
+      "name": "VBI - Sơn La"
+    },
+    {
+      "key": "085",
+      "name": "VBI - Bình Định"
+    },
+    {
+      "key": "086",
+      "name": "VBI - Hưng Yên"
+    },
+    {
+      "key": "087",
+      "name": "VBI - Huế"
+    },
+    {
+      "key": "088",
+      "name": "VBI - An Giang"
+    }
+  ]
+}

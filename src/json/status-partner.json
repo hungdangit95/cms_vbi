@@ -1,0 +1,20 @@
+{
+    "data": [
+        {
+            "key": "1",
+            "name": "Đang hoạt động"
+        },
+        {
+            "key": "2",
+            "name": "Đăng ký mới"
+        },
+        {
+            "key": "3",
+            "name": "Từ chối"
+        },
+        {
+            "key": "4",
+            "name": "Tạm dừng"
+        }
+    ]
+}

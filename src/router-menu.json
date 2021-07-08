@@ -1,0 +1,41 @@
+{
+  "data": [
+    {
+      "name": "QUẢN LÝ ĐỐI TÁC",
+      "path": "/partner",
+      "hidden": false,
+      "redirect": "noRedirect",
+      "component": "Layout",
+      "alwaysShow": true,
+      "meta": {
+        "title": "Quản lý đối tác",
+        "icon": "system",
+        "noCache": false
+      },
+      "children": [
+        {
+          "name": "Đối tác",
+          "path": "index",
+          "hidden": false,
+          "component": "partner/index",
+          "meta": {
+            "title": "Đối tác",
+            "icon": "user",
+            "noCache": false
+          }
+        },
+        {
+          "name": "Nhóm đối tác",
+          "path": "group",
+          "hidden": false,
+          "component": "partner/group/index",
+          "meta": {
+            "title": "Nhóm đối tác",
+            "icon": "peoples",
+            "noCache": false
+          }
+        }
+      ]
+    }
+  ]
+}

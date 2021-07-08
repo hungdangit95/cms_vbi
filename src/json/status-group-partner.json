@@ -1,0 +1,28 @@
+{
+    "data":[
+        {
+            "key":6,
+            "name":"All"
+         },
+       {
+          "key":1,
+          "name":"Đăng ký mới"
+       },
+       {
+        "key":2,
+        "name":"Đã phê duyệt"
+       },
+       {
+        "key":3,
+        "name":"Đang hoạt động"
+       },
+       {
+        "key":4,
+        "name":"Tạm dừng"
+       },
+       {
+        "key":5,
+        "name":"Đã xóa"
+       } 
+    ]
+ }

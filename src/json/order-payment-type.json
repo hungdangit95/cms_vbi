@@ -1,0 +1,12 @@
+{
+    "data":[
+        {
+            "key":"0",
+            "name":"Không xuất hóa đơn tự động"
+         },
+       {
+          "key":"1",
+          "name":"Xuất hóa đơn tự động"
+       }
+    ]
+ }

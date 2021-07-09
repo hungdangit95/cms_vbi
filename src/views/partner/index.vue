@@ -103,77 +103,37 @@
     <DataTable
       :everthingIsReady="loading"
       :data="partnerList"
-      :metadata="{
-        cssClass: 'cssClass',
-        sort: 'createdDate',
-        selectModel: 'single',
-        noResultMessage: string,
-        noResultDescription: 'Không tìm thấy gì cả',
-        noResultIcon: '',
-        noResultImage: '',
-        noResultNoBorders: true,
-        canSelectAll: true,
-        columns: [
-          {
-            name: 'Mã đối tác',
-            description: 'mã đối tác',
-            fieldName: 'id',
-            sortable: true,
-            order: 1,
-            templateName: '',
-            displayType: 'text',
-            style: 'width:180',
-            width: 180,
-          },
-          {
-            name: 'Tên đối tác',
-            description: 'Name',
-            fieldName: 'name',
-            sortable: true,
-            order: 2,
-            displayType: 'text',
-            style: 'width:180',
-            width: 180,
-          },
-          {
-            name: 'Nhóm',
-            description: 'Name',
-            fieldName: 'groupId',
-            sortable: true,
-            order: 1,
-            displayType: 'text',
-            style: 'width:180',
-            width: 180,
-          },
-          {
-            name: 'Mã ĐVQL',
-            description: 'Mã ĐVQL',
-            fieldName: 'managermentUnitId',
-            order: 1,
-            displayType: 'text',
-            style: 'width:180',
-            width: 180,
-          },
-          {
-            name: 'Người quản lý',
-            description: 'Người quản lý',
-            fieldName: 'employeeManagerment',
-            order: 1,
-            displayType: 'text',
-            style: 'width:180',
-            width: 180,
-          },
-          {
-            name: 'Ngày tạo',
-            description: 'Ngày tạo',
-            fieldName: 'createdDate',
-            displayType: 'datetime',
-            style: 'width:180',
-            width: 180,
-          },
-        ],
-      }"
-    ></DataTable>
+      :metadata="metedata"
+    >
+      <template slot-scope="item">
+        <template v-if="item.templateName == 'id'">
+          <el-button
+            :style="styleRow"
+            size="mini"
+            type="text"
+            @click="handleUpdate(item.scope.row)"
+            >{{ item.scope.row.id }}</el-button
+          >
+        </template>
+        <template v-if="item.templateName == 'status'">
+          <span :style="styleRow_approverd" v-if="item.scope.row.status == 1"
+            >Đang hoạt động</span
+          >
+          <span
+            :style="styleRow_waitting"
+            v-if="item.scope.row.status == 2"
+            style="color: #ffba00"
+            >Đăng ký mới</span
+          >
+          <span :style="styleRow_reject" v-if="item.scope.row.status == 3"
+            >Từ chối</span
+          >
+          <span :style="styleRow_reject" v-if="item.scope.row.status == 4"
+            >Tạm dừng</span
+          >
+        </template>
+      </template>
+    </DataTable>
     <!-- <el-table
       border
       style="width: 100%"
@@ -748,6 +708,86 @@ export default {
   name: "Partner",
   data() {
     return {
+      metedata: {
+        cssClass: "cssClass",
+        sort: "createdDate",
+        selectModel: "single",
+        noResultMessage: string,
+        noResultDescription: "Không tìm thấy gì cả",
+        noResultIcon: "",
+        noResultImage: "",
+        noResultNoBorders: true,
+        canSelectAll: true,
+        columns: [
+          {
+            name: "Mã đối tác",
+            description: "mã đối tác",
+            fieldName: "id",
+            sortable: true,
+            order: 1,
+            templateName: "id",
+            displayType: "template",
+            style: "width:180",
+            width: 180,
+          },
+          {
+            name: "Tên đối tác",
+            description: "Name",
+            fieldName: "name",
+            sortable: true,
+            order: 2,
+            displayType: "text",
+            style: "width:180",
+            width: 180,
+          },
+          {
+            name: "Nhóm",
+            description: "Name",
+            fieldName: "groupId",
+            sortable: true,
+            order: 1,
+            displayType: "text",
+            style: "width:180",
+            width: 180,
+          },
+          {
+            name: "Trạng thái",
+            description: "Trạng thái",
+            fieldName: "status",
+            order: 1,
+            templateName: "status",
+            displayType: "template",
+            style: "width:180",
+            width: 180,
+          },
+          {
+            name: "Mã ĐVQL",
+            description: "Mã ĐVQL",
+            fieldName: "managermentUnitId",
+            order: 1,
+            displayType: "text",
+            style: "width:180",
+            width: 180,
+          },
+          {
+            name: "Người quản lý",
+            description: "Người quản lý",
+            fieldName: "employeeManagerment",
+            order: 1,
+            displayType: "text",
+            style: "width:180",
+            width: 180,
+          },
+          {
+            name: "Ngày tạo",
+            description: "Ngày tạo",
+            fieldName: "createdDate",
+            displayType: "datetime",
+            style: "width:180",
+            width: 180,
+          },
+        ],
+      },
       loading: true,
       ids: [],
       single: true,
